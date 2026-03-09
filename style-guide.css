@@ -1,0 +1,334 @@
+
+.page-guide {
+  background: #f0f4f0;
+}
+
+.guide-entete {
+  background: var(--vert-fonce);
+  padding: 100px 48px 40px;
+  text-align: center;
+}
+
+.guide-entete-titre {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 800;
+  color: var(--blanc);
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+}
+
+.guide-entete-sous-titre {
+  font-size: 1rem;
+  color: var(--jaune-or);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+
+.guide-corps {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 32px;
+  max-width: 1100px;
+  margin: 40px auto 100px;
+  padding: 0 40px;
+  align-items: start;
+}
+
+
+.guide-liste {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+
+.guide-carte {
+  background: var(--blanc);
+  border-radius: 14px;
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  border: 1px solid rgba(0,0,0,0.05);
+  cursor: pointer;
+  transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+}
+
+.guide-carte:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.12);
+  border-color: var(--vert-principal);
+}
+
+.guide-carte.selectionne {
+  border-color: var(--vert-principal);
+  box-shadow: 0 0 0 2px var(--vert-principal), 0 8px 24px rgba(26,122,58,0.15);
+}
+
+
+.guide-carte-avatar-conteneur {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.guide-carte-avatar {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  border: 2px solid #eee;
+}
+
+.guide-carte-badge-verifie {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background: var(--jaune-or);
+  color: var(--vert-fonce);
+  border-radius: 50%;
+  font-size: 0.6rem;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--blanc);
+}
+
+
+.guide-carte-infos {
+  flex: 1;
+}
+
+.guide-carte-nom {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 3px;
+  letter-spacing: -0.01em;
+}
+
+.guide-carte-specialite {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--vert-principal);
+  margin-bottom: 4px;
+}
+
+.guide-carte-details {
+  font-size: 0.75rem;
+  color: var(--texte-discret);
+  font-weight: 500;
+}
+
+/* ─── FLÈCHE ─── */
+.guide-carte-fleche {
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  color: #ccc;
+  cursor: pointer;
+  padding: 0 4px;
+  transition: color 0.2s, transform 0.2s;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.guide-carte:hover .guide-carte-fleche,
+.guide-carte.selectionne .guide-carte-fleche {
+  color: var(--vert-principal);
+  transform: translateX(3px);
+}
+
+
+.guide-formulaire-conteneur {
+  position: sticky;
+  top: 80px;
+}
+
+.guide-formulaire-carte {
+  background: var(--blanc);
+  border-radius: 16px;
+  padding: 32px 28px;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.12);
+}
+
+.guide-formulaire-titre {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #111;
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+}
+
+
+.guide-champ {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.guide-champ-groupe {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.guide-champ-etiquette {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: 0.01em;
+}
+
+.guide-champ-saisie {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  color: #333;
+  background: var(--blanc);
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  appearance: none;
+}
+
+.guide-champ-saisie:focus {
+  border-color: var(--vert-principal);
+  box-shadow: 0 0 0 3px rgba(26,122,58,0.12);
+}
+
+.guide-champ-saisie::placeholder {
+  color: #bbb;
+  font-weight: 400;
+}
+
+.guide-champ-select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23888' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 36px;
+  cursor: pointer;
+}
+
+.guide-champ-textarea {
+  resize: vertical;
+  min-height: 100px;
+  line-height: 1.6;
+}
+
+
+.guide-bouton-envoyer {
+  width: 100%;
+  padding: 15px;
+  background: var(--vert-clair);
+  color: var(--blanc);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  letter-spacing: 0.02em;
+  transition: all 0.25s;
+  margin-top: 4px;
+}
+
+.guide-bouton-envoyer:hover {
+  background: var(--vert-principal);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(26,122,58,0.35);
+}
+
+.guide-bouton-envoyer:active {
+  transform: translateY(0);
+}
+
+
+.guide-confirmation {
+  display: none;
+  margin-top: 16px;
+  padding: 14px 16px;
+  background: #e8f5ee;
+  border: 1.5px solid var(--vert-principal);
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--vert-fonce);
+  text-align: center;
+  animation: apparition-haut 0.4s ease;
+}
+
+.guide-confirmation.visible {
+  display: block;
+}
+
+
+.guide-nav-basse {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: var(--blanc);
+  border-top: 1px solid #e8e8e8;
+  padding: 12px 0 8px;
+  position: sticky;
+  bottom: 0;
+  z-index: 50;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.06);
+}
+
+.guide-nav-basse-lien {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: #aaa;
+  letter-spacing: 0.02em;
+  transition: color 0.2s;
+  min-width: 60px;
+}
+
+.guide-nav-basse-lien.actif {
+  color: var(--vert-principal);
+}
+
+.guide-nav-basse-lien:hover {
+  color: var(--vert-principal);
+}
+
+.guide-nav-basse-icone {
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+
+@media (max-width: 820px) {
+  .guide-corps {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+    margin-bottom: 80px;
+  }
+
+  .guide-entete {
+    padding: 90px 24px 32px;
+  }
+
+  .guide-formulaire-conteneur {
+    position: static;
+  }
+
+  .guide-champ-groupe {
+    grid-template-columns: 1fr;
+  }
+}

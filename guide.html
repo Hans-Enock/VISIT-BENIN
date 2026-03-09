@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trouver un Guide – Visit Bénin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style-guide.css" />
+</head>
+<body class="page-guide">
+
+
+  <nav id="barre-navigation">
+    <div class="nav-marque">
+      <span class="nav-marque-grow">VISIT</span>
+      <span class="nav-marque-benin">BÉNIN</span>
+    </div>
+    <ul class="nav-liens">
+      <li><a href="index.html" class="nav-lien">Accueil</a></li>
+      <li><a href="destinations.html" class="nav-lien">Destinations</a></li>
+      <li><a href="apropos.html" class="nav-lien">À propos</a></li>
+    </ul>
+    <a href="#formulaire-contact" class="nav-bouton-contact">Connexion</a>
+  </nav>
+
+  <section class="guide-entete">
+    <h1 class="guide-entete-titre">Trouver un Guide Local</h1>
+    <p class="guide-entete-sous-titre">Explorez le Bénin avec un expert passionné</p>
+  </section>
+
+  <div class="guide-corps">
+
+    <div class="guide-liste" id="liste-guides">
+
+      <div class="guide-carte apparition" data-id="adjovi-kossi">
+        <div class="guide-carte-avatar-conteneur">
+          <img src="images/guides/avataaars.png" alt="Adjovi Kossi" class="guide-carte-avatar" />
+          <span class="guide-carte-badge-verifie">✔</span>
+        </div>
+        <div class="guide-carte-infos">
+          <h3 class="guide-carte-nom">Adjovi Kossi</h3>
+          <p class="guide-carte-specialite">Histoire & Culture</p>
+          <p class="guide-carte-details">10 ans d'exp. • FR, EN, Fon</p>
+        </div>
+        <button class="guide-carte-fleche" aria-label="Voir le profil">›</button>
+      </div>
+
+      <div class="guide-carte apparition" data-id="fatoumata-dossou" style="transition-delay:0.1s">
+        <div class="guide-carte-avatar-conteneur">
+          <img src="images/guides/avataaars1.png" alt="Fatoumata Dossou" class="guide-carte-avatar" />
+          <span class="guide-carte-badge-verifie">✔</span>
+        </div>
+        <div class="guide-carte-infos">
+          <h3 class="guide-carte-nom">Fatoumata Dossou</h3>
+          <p class="guide-carte-specialite">Nature & Safari</p>
+          <p class="guide-carte-details">6 ans d'exp. • FR, Fon, Bariba</p>
+        </div>
+        <button class="guide-carte-fleche" aria-label="Voir le profil">›</button>
+      </div>
+
+      
+      <div class="guide-carte apparition" data-id="togbui-messan" style="transition-delay:0.2s">
+        <div class="guide-carte-avatar-conteneur">
+          <img src="images/guides/avataaars.png" alt="Togbui Messan" class="guide-carte-avatar" />
+          <span class="guide-carte-badge-verifie">✔</span>
+        </div>
+        <div class="guide-carte-infos">
+          <h3 class="guide-carte-nom">Togbui Messan</h3>
+          <p class="guide-carte-specialite">Artisanat</p>
+          <p class="guide-carte-details">15 ans d'exp. • FR, EN, Fon, Yoruba</p>
+        </div>
+        <button class="guide-carte-fleche" aria-label="Voir le profil">›</button>
+      </div>
+
+      <div class="guide-carte apparition" data-id="abibou-zannou" style="transition-delay:0.3s">
+        <div class="guide-carte-avatar-conteneur">
+          <img src="images/guides/avataaars.png" alt="Abibou Zannou" class="guide-carte-avatar" />
+          <span class="guide-carte-badge-verifie">✔</span>
+        </div>
+        <div class="guide-carte-infos">
+          <h3 class="guide-carte-nom">Abibou Zannou</h3>
+          <p class="guide-carte-specialite">Écotourisme & Randonnée</p>
+          <p class="guide-carte-details">8 ans d'exp. • FR, EN, Ditammari</p>
+        </div>
+        <button class="guide-carte-fleche" aria-label="Voir le profil">›</button>
+      </div>
+
+    </div>
+
+    
+    <div class="guide-formulaire-conteneur apparition" id="formulaire-contact">
+      <div class="guide-formulaire-carte">
+        <h2 class="guide-formulaire-titre">Formulaire de Contact</h2>
+
+        <div class="guide-champ">
+          <label class="guide-champ-etiquette" for="champ-nom">Nom complet</label>
+          <input
+            type="text"
+            id="champ-nom"
+            class="guide-champ-saisie"
+            placeholder="Ex: Jean Dupont"
+          />
+        </div>
+
+        <div class="guide-champ">
+          <label class="guide-champ-etiquette" for="champ-email">Email</label>
+          <input
+            type="email"
+            id="champ-email"
+            class="guide-champ-saisie"
+            placeholder="email@exemple.com"
+          />
+        </div>
+
+        <div class="guide-champ-groupe">
+          <div class="guide-champ">
+            <label class="guide-champ-etiquette" for="champ-destination">Destination</label>
+            <select id="champ-destination" class="guide-champ-saisie guide-champ-select">
+              <option value="">Choisir...</option>
+              <option value="musee-kaba">Le Musée de Kaba</option>
+              <option value="chutes-tanougou">Chutes de Tanougou</option>
+              <option value="tata-somba">Tata Somba</option>
+              <option value="parc-pendjari">Parc Pendjari</option>
+              <option value="temple-pythons">Temple des Pythons</option>
+              <option value="palais-abomey">Palais d'Abomey</option>
+            </select>
+          </div>
+
+          <div class="guide-champ">
+            <label class="guide-champ-etiquette" for="champ-date">Date du voyage</label>
+            <input
+              type="date"
+              id="champ-date"
+              class="guide-champ-saisie"
+            />
+          </div>
+        </div>
+
+        <div class="guide-champ">
+          <label class="guide-champ-etiquette" for="champ-message">Message</label>
+          <textarea
+            id="champ-message"
+            class="guide-champ-saisie guide-champ-textarea"
+            placeholder="Parlez-nous de votre projet de voyage..."
+          ></textarea>
+        </div>
+
+        <button class="guide-bouton-envoyer" id="bouton-envoyer-demande">
+          Envoyer ma demande 
+        </button>
+
+        
+        <div class="guide-confirmation" id="guide-confirmation">
+          Votre demande a bien été envoyée ! Un guide vous contactera sous 24h.
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  
+
+ <section class="section-contact" id="contact">
+    <div class="contact-contenu apparition">
+      <h2 class="contact-titre">DÉCOUVREZ LE BÉNIN AUTREMENT</h2>
+      <div class="contact-infos">
+        <div class="contact-ligne">
+          <img src="images/icons8-mail-50.png" alt="email" class="contact-icone" />
+          <span>growupbenin@gmail.com</span>
+        </div>
+        <div class="contact-ligne">
+          <img src="images/icons8-phone-call-48.png" alt="email" class="contact-icone" />
+          <span>0144000000</span>
+        </div>
+        <div class="contact-ligne">
+          <img src="images/icons8-location-50.png" alt="email" class="contact-icone" />
+          <span>Cotonou, Bénin</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+  <script src="script-guide.js"></script>
+</body>
+</html>

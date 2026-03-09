@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Destinations – Grow-Up Bénin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+ 
+  <nav id="barre-navigation">
+    <div class="nav-marque">
+      <span class="nav-marque-grow">VISIT</span>
+      <span class="nav-marque-benin">BÉNIN</span>
+    </div>
+    <ul class="nav-liens">
+      <li><a href="index.html" class="nav-lien">Accueil</a></li>
+      <li><a href="destinations.html" class="nav-lien actif">Destinations</a></li>
+      <li><a href="apropos.html" class="nav-lien">À propos</a></li>
+    </ul>
+    <a href="#contact" class="nav-bouton-contact">Connexion</a>
+  </nav>
+
+  <section class="entete-destinations">
+    <div class="entete-cercle-deco"></div>
+    <div class="entete-destinations-contenu">
+      <span class="entete-destinations-pastille">EXPLORER LE BÉNIN</span>
+      <h1 class="entete-destinations-titre">Portail Destinations</h1>
+      <p class="entete-destinations-description">
+        Parcourez une terre riche d'histoire, de nature sauvage et de traditions
+        ancestrales. Trouvez votre prochaine aventure parmi nos sites d'exception.
+      </p>
+    </div>
+  </section>
+
+  
+  <div class="conteneur-recherche">
+    <div class="barre-recherche">
+      <img src="images/icons8-search-64.png" alt="" class="recherche-icone" />
+      <input
+        type="text"
+        class="recherche-champ"
+        id="champ-recherche"
+        placeholder="Où voulez-vous aller au Bénin ?"
+      />
+      <button class="recherche-bouton" id="bouton-rechercher">Rechercher</button>
+    </div>
+  </div>
+
+  <section class="section-selection">
+    <h2 class="titre-selection">Sélection d'exception</h2>
+    <div class="soulignement-selection"></div>
+
+    <div class="grille-selection" id="grille-destinations">
+      <div class="carte-selection apparition">
+        <div class="carte-selection-visuel">
+          <img src="images/télécharger.jfif" alt="Le Musée de Kaba" class="carte-selection-photo" />
+          <span class="carte-selection-badge badge-atacora">Atacora</span>
+          <div class="carte-selection-superpose">
+            <h3 class="carte-selection-nom">Le Musée de Kaba</h3>
+            
+          </div>
+        </div>
+        <div class="carte-selection-pied">
+          <div class="carte-selection-periode">
+            <img src="images/icons8-calendar-50.png" alt="" class="periode-icone" />
+            <div>
+              <div class="periode-etiquette">PÉRIODE RECOMMANDÉE</div>
+              <div class="periode-valeur">Octobre – Avril</div>
+            </div>
+          </div>
+          <a href="#" class="bouton-decouvrir-carte">Découvrir →</a>
+        </div>
+      </div>
+
+     
+      <div class="carte-selection apparition" style="transition-delay:0.1s">
+        <div class="carte-selection-visuel">
+          <img src="images/KOTA FALLS _ Natitingou, Benin _ Places To Visit _.jfif" alt="Les Chutes de Tanougou" class="carte-selection-photo" />
+          <span class="carte-selection-badge badge-atacora">Atacora</span>
+          <div class="carte-selection-superpose">
+            <h3 class="carte-selection-nom">Les Chutes de Tanougou</h3>
+            
+          </div>
+        </div>
+        <div class="carte-selection-pied">
+          <div class="carte-selection-periode">
+            <img src="images/icons8-calendar-50.png" alt="" class="periode-icone" />
+            <div>
+              <div class="periode-etiquette">PÉRIODE RECOMMANDÉE</div>
+              <div class="periode-valeur">Toute l'année</div>
+            </div>
+          </div>
+          <a href="#" class="bouton-decouvrir-carte">Découvrir →</a>
+        </div>
+      </div>
+
+      
+      <div class="carte-selection apparition" style="transition-delay:0.2s">
+        <div class="carte-selection-visuel">
+          <img src="images/télécharger (1).jfif" alt="Tata Somba" class="carte-selection-photo" />
+          <span class="carte-selection-badge badge-atacora">Atacora</span>
+          <div class="carte-selection-superpose">
+            <h3 class="carte-selection-nom">Tata Somba</h3>
+           
+          </div>
+        </div>
+        <div class="carte-selection-pied">
+          <div class="carte-selection-periode">
+           <img src="images/icons8-calendar-50.png" alt="" class="periode-icone" />
+            <div>
+              <div class="periode-etiquette">PÉRIODE RECOMMANDÉE</div>
+              <div class="periode-valeur">Novembre – Février</div>
+            </div>
+          </div>
+          <a href="#" class="bouton-decouvrir-carte">Découvrir →</a>
+        </div>
+      </div>
+
+      <div class="carte-selection apparition" style="transition-delay:0.3s">
+        <div class="carte-selection-visuel">
+          <img src="images/Pendjari National Park_ UNESCO Biosphere Reserve in Africa.jfif" alt="Parc National de la Pendjari" class="carte-selection-photo" />
+          <span class="carte-selection-badge badge-atacora">Atacora</span>
+          <div class="carte-selection-superpose">
+            <h3 class="carte-selection-nom">Parc National de la Pendjari</h3>
+            
+          </div>
+        </div>
+        <div class="carte-selection-pied">
+          <div class="carte-selection-periode">
+            <img src="images/icons8-calendar-50.png" alt="" class="periode-icone" />
+            <div>
+              <div class="periode-etiquette">PÉRIODE RECOMMANDÉE</div>
+              <div class="periode-valeur">Janvier – Avril</div>
+            </div>
+          </div>
+          <a href="#" class="bouton-decouvrir-carte">Découvrir →</a>
+        </div>
+      </div>
+
+      <div class="carte-selection apparition" style="transition-delay:0.4s">
+        <div class="carte-selection-visuel">
+          <img src="images/The Temple of Python in Ouidah.jfif" alt="Temple des Pythons" class="carte-selection-photo" />
+          <span class="carte-selection-badge badge-atlantique">Atlantique</span>
+          <div class="carte-selection-superpose">
+            <h3 class="carte-selection-nom">Temple des Pythons</h3>
+            
+          </div>
+        </div>
+        <div class="carte-selection-pied">
+          <div class="carte-selection-periode">
+            <img src="images/icons8-calendar-50.png" alt="" class="periode-icone" />
+            <div>
+              <div class="periode-etiquette">PÉRIODE RECOMMANDÉE</div>
+              <div class="periode-valeur">Toute l'année</div>
+            </div>
+          </div>
+          <a href="#" class="bouton-decouvrir-carte">Découvrir →</a>
+        </div>
+      </div>
+
+      <div class="carte-selection apparition" style="transition-delay:0.5s">
+        <div class="carte-selection-visuel">
+          <img src="images/Benin, West Africa, Abomey, bas-reliefs at agoli-agbo former palace.jfif" alt="Palais Royaux d'Abomey" class="carte-selection-photo" />
+          <span class="carte-selection-badge badge-zou">Zou</span>
+          <div class="carte-selection-superpose">
+            <h3 class="carte-selection-nom">Palais Royaux d'Abomey</h3>
+          </div>
+        </div>
+        <div class="carte-selection-pied">
+          <div class="carte-selection-periode">
+            <img src="images/icons8-calendar-50.png" alt="" class="periode-icone" />
+            <div>
+              <div class="periode-etiquette">PÉRIODE RECOMMANDÉE</div>
+              <div class="periode-valeur">Novembre – Mai</div>
+            </div>
+          </div>
+          <a href="#" class="bouton-decouvrir-carte">Découvrir →</a>
+        </div>
+      </div>
+
+    </div>
+
+    
+    <div class="conteneur-charger-plus">
+      <button class="bouton-charger-plus" id="bouton-charger-plus">
+        CHARGER PLUS DE DESTINATIONS
+      </button>
+    </div>
+
+  </section>
+
+
+  <section class="section-contact" id="contact">
+    <div class="contact-contenu apparition">
+      <h2 class="contact-titre">DÉCOUVREZ LE BÉNIN AUTREMENT</h2>
+      <div class="contact-infos">
+        <div class="contact-ligne">
+          <img src="images/icons8-mail-50.png" alt="email" class="contact-icone" />
+          <span>growupbenin@gmail.com</span>
+        </div>
+        <div class="contact-ligne">
+          <img src="images/icons8-phone-call-48.png" alt="email" class="contact-icone" />
+          <span>0144000000</span>
+        </div>
+        <div class="contact-ligne">
+          <img src="images/icons8-location-50.png" alt="email" class="contact-icone" />
+          <span>Cotonou, Bénin</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

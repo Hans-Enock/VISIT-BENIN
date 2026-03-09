@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="titre-onglet">Destination – Grow-Up Bénin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav id="barre-navigation">
+    <div class="nav-marque">
+      <span class="nav-marque-grow">VISIT</span>
+      <span class="nav-marque-benin">BÉNIN</span>
+    </div>
+    <ul class="nav-liens">
+      <li><a href="index.html" class="nav-lien">Accueil</a></li>
+      <li><a href="destinations.html" class="nav-lien actif">Destinations</a></li>
+      <li><a href="apropos.html" class="nav-lien">À propos</a></li>
+    </ul>
+    <a href="#contact" class="nav-bouton-contact">Connexion</a>
+  </nav>
+
+
+  <section class="detail-heros">
+    <a href="destinations.html" class="detail-lien-retour">← Voir d'autres destinations</a>
+    <img src="" alt="" class="detail-heros-image" id="detail-image" />
+    <div class="detail-heros-superposition"></div>
+    <div class="detail-heros-contenu">
+      <span class="detail-badge-region" id="detail-badge-region"></span>
+      <h1 class="detail-titre" id="detail-titre"></h1>
+      <p class="detail-localisation" id="detail-localisation"></p>
+    </div>
+  </section>
+
+
+  <div class="detail-corps">
+
+   
+    <div class="detail-colonne-principale">
+      <div class="detail-bloc apparition">
+        <h2 class="detail-sous-titre">À propos</h2>
+        <p class="detail-texte" id="detail-apropos"></p>
+      </div>
+      <div class="detail-bloc apparition">
+        <h2 class="detail-sous-titre">Histoire & Patrimoine</h2>
+        <p class="detail-texte" id="detail-histoire"></p>
+      </div>
+
+<div class="detail-bloc detail-bloc-video apparition">
+  <h2 class="detail-sous-titre">Vivez l'expérience</h2>
+  <div class="detail-video-conteneur">
+    <video
+      id="detail-video"
+      class="detail-video"
+      controls
+      poster=""
+    >
+      <source src="" type="video/mp4" />
+      Votre navigateur ne supporte pas la lecture vidéo.
+    </video>
+  </div>
+</div>
+    </div>
+
+  
+    <aside class="detail-colonne-laterale">
+
+      
+      <div class="detail-encart detail-encart-vert apparition">
+        <h3 class="detail-encart-titre">
+          <span>⭐</span> Points Forts
+        </h3>
+        <ul class="detail-liste-points" id="detail-points-forts"></ul>
+      </div>
+
+      <!-- Meilleure période -->
+      <div class="detail-encart apparition">
+        <div class="detail-info-ligne">
+          <img src="images/icons8-calendar-50.png" alt="" class="detail-info-icone" />
+          <div>
+            <div class="detail-info-etiquette">Meilleure période</div>
+            <div class="detail-info-valeur" id="detail-periode"></div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="detail-encart apparition">
+        <div class="detail-info-ligne">
+          <img src="images/icons8-location-50.png" alt="" class="detail-info-icone" />
+          <div>
+            <div class="detail-info-etiquette">Localisation</div>
+            <div class="detail-info-valeur" id="detail-coords"></div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="detail-encart detail-encart-jaune apparition">
+        <img src="images/icons8-compass-50.png" alt="" class="detail-cta-icone" />
+
+        <p class="detail-cta-texte">Prêt pour l'aventure ?<br/><span>Réservez un guide local certifié</span></p>
+        <a href="guide.html" class="detail-cta-bouton">Contacter un guide</a>
+      </div>
+
+    </aside>
+  </div>
+
+  <section class="detail-autres">
+    <h2 class="detail-autres-titre">Autres destinations à explorer</h2>
+    <div class="detail-autres-grille" id="detail-autres-grille"></div>
+  </section>
+
+  <section class="section-contact" id="contact">
+    <div class="contact-contenu apparition">
+      <h2 class="contact-titre">DÉCOUVREZ LE BÉNIN AUTREMENT</h2>
+      <div class="contact-infos">
+        <div class="contact-ligne">
+          <img src="images/icons8-mail-50.png" alt="email" class="contact-icone" />
+          <span>growupbenin@gmail.com</span>
+        </div>
+        <div class="contact-ligne">
+          <img src="images/icons8-phone-call-48.png" alt="email" class="contact-icone" />
+          <span>0144000000</span>
+        </div>
+        <div class="contact-ligne">
+          <img src="images/icons8-location-50.png" alt="email" class="contact-icone" />
+          <span>Cotonou, Bénin</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
