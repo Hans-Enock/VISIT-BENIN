@@ -487,11 +487,25 @@ body {
 
 @media (max-width: 768px) {
   #barre-navigation {
-    padding: 0 20px;
+    padding: 0 16px;
+  }
+
+  .nav-marque {
+    font-size: 0.85rem;
   }
 
   .nav-liens {
-    display: none;
+    display: flex; 
+    gap: 16px;     
+  }
+
+  .nav-lien {
+    font-size: 0.75rem; 
+  }
+
+  .nav-bouton-contact {
+    padding: 7px 12px;
+    font-size: 0.75rem;
   }
 
   .section-destinations {
