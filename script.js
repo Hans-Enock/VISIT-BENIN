@@ -229,7 +229,7 @@ const donneesDestinations = {
     apropos: 'Le Temple des Pythons à Ouidah n\'est pas seulement un site touristique, mais un véritable lieu de prières et de rituels sacrés où les dignitaires Vodoun viennent honorer les divinités. Des dizaines de pythons royaux y cohabitent librement avec les gardiens du temple.',
     histoire: 'Fondé au XVIIe siècle, le Temple des Pythons est au cœur de la spiritualité Vodoun de Ouidah. Le python Dangbé y est considéré comme une divinité protectrice de la ville. Les visiteurs peuvent tenir les serpents sacrés dans leurs mains, sous la supervision des prêtres.',
     pointsForts: ['Site sacré Vodoun authentique', 'Pythons royaux en liberté', 'Rituels et cérémonies traditionnels', 'Centre spirituel de Ouidah', 'Patrimoine culturel immatériel'],
-    video:'' ,
+    video:'vidéos/MUSÉE KABA 🇧🇯-.mp4' ,
     videoPoster:"images/The Temple of Python in Ouidah.jfif"
   },
   'palais-abomey': {
