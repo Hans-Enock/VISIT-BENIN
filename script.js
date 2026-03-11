@@ -90,7 +90,7 @@ const observateurCompteurs = new IntersectionObserver(
       if (entree.isIntersecting && !compteursLances) {
         compteursLances = true;
         animer_compteur(document.getElementById('stat-destinations'), '6');
-        animer_compteur(document.getElementById('stat-unesco'), '3');
+        animer_compteur(document.getElementById('stat-unesco'), '2');
         animer_compteur(document.getElementById('stat-histoire'), '400+');
       }
     });
